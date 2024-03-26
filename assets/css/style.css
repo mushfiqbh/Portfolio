@@ -7155,6 +7155,7 @@ textarea:-ms-input-placeholder {
     .social-share-popup {
         z-index: 2;
         position: absolute;
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
