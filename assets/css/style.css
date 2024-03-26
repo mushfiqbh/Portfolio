@@ -7151,6 +7151,13 @@ textarea:-ms-input-placeholder {
     position: relative;
 }
 
+@media screen and (width>1200px) {
+    .social-share-popup {
+        z-index: 2;
+        position: absolute;
+    }
+}
+
 .social-share-popup.hidden {
     display: none;
 }
