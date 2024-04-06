@@ -7162,13 +7162,39 @@ ul.social-links a {
     position: relative;
 }
 
-@media screen and (width>1200px) {
+@media screen and (width>360px) {
     .social-share-popup {
-        z-index: 2;
-        position: absolute;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (width>480px) {
+    .social-share-popup {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+
+@media screen and (width>768px) {
+    .social-share-popup {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media screen and (width>992px) {
+    .social-share-popup {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+
+@media screen and (width>1200px) {
+    .social-share-popup {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 
 .social-share-popup.hidden {
     display: none;
