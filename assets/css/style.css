@@ -7130,6 +7130,7 @@ ul.social-links {
 ul.social-links a {
     color: var(--color-danger);
     margin: 0 12px;
+    font-size: larger;
 }
 
 .social-share-style-1.single-page-icone {
