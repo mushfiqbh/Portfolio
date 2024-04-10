@@ -12839,6 +12839,10 @@ figcaption {
     }
 }
 
+.ptb-42 {
+    padding: 42px 0;
+}
+
 .slide.slider-style-3 .slider-wrapper .background-image-area {
     /* padding: 34px; */
     box-shadow: var(--shadow-1);
