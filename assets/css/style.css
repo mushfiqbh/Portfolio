@@ -8543,6 +8543,7 @@ Copyright (c) 2015 Daniel Eden
     animation-name: fadeInDownBig;
 }
 
+
 @-webkit-keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -14417,7 +14418,7 @@ div#featured-project-carousel {
 
 .progress-charts .progress {
     height: 13px;
-    overflow: visible;
+    overflow: hidden;
     font-size: 14px;
     border-radius: 10px;
     padding: 3px;
