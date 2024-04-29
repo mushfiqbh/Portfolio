@@ -11708,6 +11708,7 @@ button.rn-btn::before {
 
 a.rn-btn:hover,
 button.rn-btn:hover {
+    color: #fff;
     transform: translateY(-5px);
 }
 
@@ -12859,11 +12860,18 @@ figcaption {
 }
 
 .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
-    
+    height: 390px;
+    padding: 50px;
     width: 100%;
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 479px) {
+    .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 995px) {
@@ -13585,6 +13593,11 @@ body.modal-open {
     padding-left: 2rem;
 }
 
+.modal .modal-dialog .modal-content .modal-body .text-content .button-group {
+    display: flex;
+    align-items: center;
+}
+
 .modal .modal-dialog .modal-content .modal-body .text-content h3 {
     margin-bottom: 20px;
     font-size: 34px;
@@ -13873,7 +13886,7 @@ div#featured-project-carousel {
     outline: none;
     border: 0 none;
     transition: all .5s;
-    background: transparent;
+    background: var(--color-primary);
     border-radius: 10px;
 }
 
@@ -13900,11 +13913,10 @@ div#featured-project-carousel {
 
 .rn-nav-list .nav-item .nav-link:hover,
 .rn-nav-list .nav-item .nav-link.active {
-    color: #ff014f;
+    color: var(--color-primary);
     background-color: transparent;
     border-color: transparent;
     border: 0 none;
-    background: var(--background-color-1);
     box-shadow: var(--shadow-1);
 }
 
@@ -14368,6 +14380,12 @@ div#featured-project-carousel {
 }
 
 .progress-charts i {
+    font-size: 50px;
+    color: indigo;
+    opacity: 1;
+}
+
+.white-version.progress-charts i {
     font-size: 50px;
     color: indigo;
     opacity: 0.8;
