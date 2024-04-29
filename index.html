@@ -424,7 +424,7 @@
                                                             <h6 class="heading heading-h6">Javascript</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.5s"
                                                                     data-wow-delay=".3s"
                                                                     role="progressbar"
@@ -447,7 +447,7 @@
                                                             <h6 class="heading heading-h6">REACT JS</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.6s"
                                                                     data-wow-delay=".4s"
                                                                     role="progressbar"
@@ -470,7 +470,7 @@
                                                             <h6 class="heading heading-h6">NEXT JS</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.6s"
                                                                     data-wow-delay=".4s"
                                                                     role="progressbar"
@@ -493,7 +493,7 @@
                                                             <h6 class="heading heading-h6">NODE JS</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.6s"
                                                                     data-wow-delay=".4s"
                                                                     role="progressbar"
@@ -516,7 +516,7 @@
                                                             <h6 class="heading heading-h6">Figma</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.7s"
                                                                     data-wow-delay=".5s"
                                                                     role="progressbar"
@@ -539,7 +539,7 @@
                                                             <h6 class="heading heading-h6">API</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.8s"
                                                                     data-wow-delay=".6s"
                                                                     role="progressbar"
@@ -562,7 +562,7 @@
                                                             <h6 class="heading heading-h6">PostgreSQL</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.9s"
                                                                     data-wow-delay=".7s"
                                                                     role="progressbar"
@@ -585,7 +585,7 @@
                                                             <h6 class="heading heading-h6">HTML + Tailwind CSS</h6>
                                                             <div class="progress">
                                                                 <div
-                                                                    class="progress-bar wow fadeInLeft"
+                                                                    class="progress-bar wow"
                                                                     data-wow-duration="0.9s"
                                                                     data-wow-delay=".7s"
                                                                     role="progressbar"
@@ -1169,6 +1169,27 @@
         document.querySelector(".moreSocial").addEventListener("click", () => {
             document.querySelector(".social-share-popup").classList.toggle("hidden");
             document.querySelector(".background-image-area").classList.toggle("ptb-42")
+        })
+
+        let duration = 1000;
+        const progressBars = document.querySelectorAll(".progress-bar");
+        progressBars.forEach((progress) => {
+            const keyframes = [
+                {
+                    opacity: 0,
+                    width: "0",
+                },
+                {
+                    opacity: 1,
+                    width: progress.style.width,
+                }
+            ];
+
+            const animation = progress.animate(keyframes, {
+                duration,
+            });
+
+            duration += 500;
         })
 
         document.getElementById("currentYear").innerHTML = new Date().getFullYear()

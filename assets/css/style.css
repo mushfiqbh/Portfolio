@@ -14418,7 +14418,7 @@ div#featured-project-carousel {
 
 .progress-charts .progress {
     height: 13px;
-    overflow: hidden;
+    overflow: visible;
     font-size: 14px;
     border-radius: 10px;
     padding: 3px;
