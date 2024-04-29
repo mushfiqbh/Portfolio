@@ -58,7 +58,7 @@
                     </nav>
                     <!-- Start Header Right  -->
                     <div class="header-right">
-                        <a class="rn-btn" target="_blank" href="mailto://mushfiqbh@gmail.com"><i data-feather="mail"></i></a>
+                        <a class="rn-btn" id="darkModeBtn"><i data-feather="sun"></i></a>
 
                         <div class="hamberger-menu d-block d-xl-none">
                             <i id="menuBtn" class="feather-menu humberger-menu"></i>
@@ -904,6 +904,11 @@
     <!-- Rn footer area end -->
     <!-- JS ============================================ -->
     <script>
+        const darkModeBtn = document.getElementById("darkModeBtn");
+        darkModeBtn.addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("white-version")
+        })
+
         document.querySelector(".moreSocial").addEventListener("click", () => {
             document.querySelector(".social-share-popup").classList.toggle("hidden");
             document.querySelector(".background-image-area").classList.toggle("ptb-42")

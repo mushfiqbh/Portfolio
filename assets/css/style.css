@@ -10631,42 +10631,17 @@ body.template-color-1 {
     margin-left: 30px;
     justify-content: flex-end;
     display: flex;
+    align-items: center;
     margin-right: -18px;
+    gap: 1rem;
 }
 
-@media only screen and (max-width: 575px) {
-    .header-wrapper .header-right a.rn-btn {
-        font-size: 14px;
-        padding: 17px 19px;
-        line-height: 21px;
-    }
+.header-wrapper .header-right a.rn-btn {
+    font-size: 13px;
+    padding: 17px 19px;
+    line-height: 21px;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
-    .header-wrapper .header-right a.rn-btn {
-        font-size: 13px;
-        padding: 17px 19px;
-        line-height: 21px;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-wrapper .header-right a.rn-btn {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-wrapper .header-right a.rn-btn {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header-wrapper .header-right a.rn-btn {
-        display: none;
-    }
-}
 
 .header-wrapper .header-right i {
     z-index: 800;
@@ -11699,6 +11674,7 @@ button.rn-btn {
     padding: 15px 35px;
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
     color: var(--color-primary);
 }
 
