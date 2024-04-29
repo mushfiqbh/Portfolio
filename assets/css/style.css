@@ -7346,12 +7346,17 @@ Copyright (c) 2015 Daniel Eden
 */
 .moving-title {
     position: relative;
-    animation: moving-title 10s alternate infinite;
+    animation: moving-title 7s ease-in-out alternate infinite;
 }
 
 @keyframes moving-title {
-    0%   {left: 0; top: 0;}
-    100%  {left: 70%; top: 0;}
+    0%   {
+        left: 0;
+    }
+    100%  {
+        left: 100%;
+        transform: translateX(-100%);
+    }
 }
 
 
