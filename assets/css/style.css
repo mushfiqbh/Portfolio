@@ -11675,7 +11675,6 @@ button.rn-btn {
     list-style: none;
     text-decoration: none;
     cursor: pointer;
-    color: var(--color-primary);
 }
 
 a.rn-btn,
@@ -11689,6 +11688,7 @@ button.rn-btn {
     font-size: 14px;
     font-weight: 500;
     border: 0 none;
+    color: var(--color-primary);
 }
 
 a.rn-btn::before,
@@ -11704,6 +11704,7 @@ button.rn-btn::before {
     background: linear-gradient(to right bottom, #212428, #16181c);
     opacity: 0;
     z-index: -1;
+    
 }
 
 a.rn-btn:hover,
@@ -12870,6 +12871,7 @@ figcaption {
 
 @media screen and (max-width: 479px) {
     .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
+        
         padding: 0;
     }
 }
@@ -13622,6 +13624,10 @@ body.modal-open {
     font-weight: 400;
     margin-bottom: 0;
     width: 93%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .text-content a {
+    background-color: #fff;
 }
 
 .modal .modal-dialog .modal-content .modal-body .text-content p:nth-child(1) {

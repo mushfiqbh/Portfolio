@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/2372ca885d.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
+<body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
 
     <!-- Start Header -->
     <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
@@ -907,6 +907,10 @@
         darkModeBtn.addEventListener("click", () => {
             document.querySelector("body").classList.toggle("white-version")
         })
+
+        if(outerWidth<767){
+            document.querySelector(".thumbnail-image img").setAttribute("src", './assets/images/slider/selfie.jpg');
+        }
 
         document.querySelector(".moreSocial").addEventListener("click", () => {
             document.querySelector(".social-share-popup").classList.toggle("hidden");
