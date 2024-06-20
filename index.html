@@ -20,7 +20,33 @@
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/2372ca885d.js" crossorigin="anonymous"></script>
+
+    <!-- Email JS Service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "k6BnjHuitclYjPVSa",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ipcu0w4', 'template_aicpn0y', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
@@ -842,7 +868,7 @@
         </div>
         <!-- End Project Modal 2 -->
 
-<!-- ====================================== BLOG ====================================================== -->
+<!-- ================================================================================ BLOG ====================================================== -->
         <!-- Start News Area -->
         <div class="rn-blog-area rn-section-gap section-separator" id="blog">
             <div class="container">
@@ -976,23 +1002,25 @@
                         <!-- Comment Section Area Start -->
                         <div class="comment-inner">
                             <h3 class="title mb--40 mt--50">Leave a Reply</h3>
-                            <form action="#">
+                            <form id="contact-form">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-12">
-                                        <div class="rnform-group"><input type="text" placeholder="Name">
+                                        <div class="rnform-group"><input type="text" placeholder="" name="contact_number" value="697483">
                                         </div>
-                                        <div class="rnform-group"><input type="email" placeholder="Email">
+                                        <div class="rnform-group"><input type="text" placeholder="Name" name="user_name">
                                         </div>
-                                        <div class="rnform-group"><input type="text" placeholder="Website">
+                                        <div class="rnform-group"><input type="email" placeholder="Email" name="user_email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-12">
                                         <div class="rnform-group">
-                                            <textarea placeholder="Comment"></textarea>
+                                            <textarea placeholder="Comment" name="message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
+                                        <button type="submit" style="width: fit-content; border: none;">
+                                            <a class="rn-btn"><span>SUBMIT NOW</span></a>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
