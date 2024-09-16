@@ -4,7 +4,7 @@ This repository showcases my web development skills and experience. Here you'll 
 
 **Live Demo:**
 
-Visit my live portfolio website at: mushfiqbh.vercel.app [invalid URL removed]
+Visit my live portfolio website at: mushfiqbh.vercel.app [<a href="https://mushfiqbh.vercel.app">Hire Me</a>]
 
 **Technologies Used:**
 
@@ -27,8 +27,8 @@ I'm actively seeking exciting remote web development opportunities where I can u
 
 **Contact:**
 
-* Email: ([email address removed])
-* LinkedIn: (your_linkedin_profile_url)
+* Email: mushfiqbh@gmail.com
+* LinkedIn: https://linkedin.com/in/mushfiqbh
 
 **Additional Information:**
 
