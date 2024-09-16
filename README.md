@@ -4,7 +4,7 @@ This repository showcases my web development skills and experience. Here you'll 
 
 **Live Demo:**
 
-Visit my live portfolio website at: mushfiqbh.vercel.app [<a href="https://mushfiqbh.vercel.app">Hire Me</a>]
+Visit my live portfolio website at: mushfiqbh.vercel.app <a href="https://mushfiqbh.vercel.app">Hire Me</a>
 
 **Technologies Used:**
 
