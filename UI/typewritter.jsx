@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 export default function Typewriter() {
-  const texts = ["Full Stack Developer", "Web Designer", "Software Engineer"];
+  const texts = ["FullStack Developer", "Web Designer", "Software Engineer"];
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
@@ -37,7 +37,7 @@ export default function Typewriter() {
   }, [currentText, isDeleting, textIndex, texts, typingSpeed]);
 
   return (
-    <h1 className="text-5xl font-bold mt-2">
+    <h1 className="text-3xl lg:text-5xl font-bold mt-2">
       {currentText}
       <span className="text-[--pink]">|</span>
     </h1>

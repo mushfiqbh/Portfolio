@@ -53,18 +53,18 @@ export default function CodeforcesRating() {
   }, []);
 
   return (
-    <div className="">
+    <div>
       {loading ? (
         <div className="h-[300px] flex items-center justify-center">
           <CircularProgress />
         </div>
       ) : (
         <>
-          <h1 className="text-[12px] lg:text-right mb-2">
-            Problem Solving Rating Progress on Codeforces
+          <h1 className="text-[12px] mb-2">
+            My Problem Solving Rating Progress on Codeforces
           </h1>
-          <Paper elevation={3} sx={{ p: 2 }}>
-            <ResponsiveContainer width="100%" height={200}>
+          <Paper elevation={3} sx={{ pt: 2, pb: 1, pr: 2, pl: 1 }}>
+            <ResponsiveContainer width="100%" height={250}>
               <LineChart data={ratingsData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis
@@ -72,7 +72,7 @@ export default function CodeforcesRating() {
                   label={{
                     value: "Contest",
                     position: "insideBottom",
-                    offset: -5,
+                    offset: -4,
                   }}
                 />
                 <YAxis

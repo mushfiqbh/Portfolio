@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div
       id="header"
-      className="w-full min-h-20 flex justify-between px-10 py-5 fixed shadow-md dark:border-none border-b border-gray-200 bg-[--bgheader] dark:text-white"
+      className="w-full min-h-20 z-10 flex justify-between px-10 py-5 fixed shadow-md dark:border-none border-b border-gray-200 bg-[--bgheader] dark:text-white"
     >
       <div>
         <Button type="button" variant="round">
