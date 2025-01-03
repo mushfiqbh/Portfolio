@@ -1,0 +1,19 @@
+/* Custom class for sliding border animation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px; /* Border height */
+  background: pink; /* Border color */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expands the border */
+}
