@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { projects } from "@/assets/assets";
+import { projects } from "@/constants/projects";
 import { motion } from "framer-motion";
 import Headline from "./sub/headline";
-import ImageSlider from "./sub/image-slder";
+import ImageSlider from "./sub/image-slider";
 
 export default function Page() {
   const badgeColors = [

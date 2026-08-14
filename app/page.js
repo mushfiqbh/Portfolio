@@ -2,7 +2,7 @@ import Hero from "@/components/hero";
 import Project from "@/components/project";
 import Presenter from "@/components/sub/presenter";
 import Achievement from "@/components/achievement";
-import Services from "@/components/services";
+import Competencies from "@/components/competencies";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <Presenter />
       <Hero />
       <Project />
+      <Competencies />
       <Achievement />
-      <Services />
     </main>
   );
 }

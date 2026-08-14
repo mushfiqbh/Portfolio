@@ -6,14 +6,11 @@ export default function ImageSlider({ project, reversed }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div>
+    <div className={reversed ? "lg:order-2" : "lg:order-1"}>
       <motion.div
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.35 }}
-        className={`
-          relative overflow-hidden rounded-2xl border border-zinc-800
-          ${reversed ? "lg:order-2" : ""}
-        `}
+        className="relative overflow-hidden rounded-2xl border border-zinc-800"
       >
         <div className="relative aspect-[16/10] overflow-hidden group">
           {/* Slides */}
